@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="Stylesheet" href="Teste.css">
+</head>
+<body>
+    <div class="Questão" id="Q1">
+        <header><h1>Teste</h1></header>
+        <section>
+            <div id="1">
+                <h1>1- Digite um número e veja se pertence ou não a sequência de Fibonacci</h1><br>
+                <p>Didite um número:
+                    <input type="number" name="Numero" id="txtn">
+                </p>   
+               <p>
+                <input type="button" value="Confirmar" onclick="res1()">
+               </p> </br>
+               <div id="resp">
+                Digite um número...
+               </div>
+            </div>
+
+            <div class="container">
+                <h1>2- Contar Letra 'A'</h1>
+                <input type="text" id="inputString" placeholder="Digite uma string...">
+                <button onclick="contarLetraA()">Contar</button>
+            
+                <div class="result" id="resultado"></div>
+            </div>
+            <div class="container3">
+                <h1>3 - Resultado da variável SOMA</h1>
+                <button onclick="Soma()">Contar</button>
+                <p id="resultado3"></p>
+            </div>
+
+            <div class="container">
+                <h1>4- Complete as Sequências</h1>
+                
+                <!-- Sequência A -->
+                <h3>a) 1, 3, 5, 7, ___</h3>
+                <button onclick="sequenciaA()">Mostrar Próximo</button>
+                <p id="resultadoA"></p>
+            
+                <!-- Sequência B -->
+                <h3>b) 2, 4, 8, 16, 32, 64, ____</h3>
+                <button onclick="sequenciaB()">Mostrar Próximo</button>
+                <p id="resultadoB"></p>
+            
+                <!-- Sequência C -->
+                <h3>c) 0, 1, 4, 9, 16, 25, 36, ____</h3>
+                <button onclick="sequenciaC()">Mostrar Próximo</button>
+                <p id="resultadoC"></p>
+            
+                <!-- Sequência D -->
+                <h3>d) 4, 16, 36, 64, ____</h3>
+                <button onclick="sequenciaD()">Mostrar Próximo</button>
+                <p id="resultadoD"></p>
+            
+                <!-- Sequência E -->
+                <h3>e) 1, 1, 2, 3, 5, 8, ____</h3>
+                <button onclick="sequenciaE()">Mostrar Próximo</button>
+                <p id="resultadoE"></p>
+            
+                <!-- Sequência F -->
+                <h3>f) 2, 10, 12, 16, 17, 18, 19, ____</h3>
+                <button onclick="sequenciaF()">Mostrar Próximo</button>
+                <p id="resultadoF"></p>
+            
+            </div>
+
+            <h1>5-Descubra qual interruptor controla cada lâmpada</h1>
+
+<div>
+    <p> Você tem três interruptores e três lâmpadas em salas diferentes. Use duas idas até a sala das lâmpadas para descobrir qual interruptor controla qual lâmpada.</p>
+
+    <!-- Controles de Interruptores -->
+    <h3>Interruptores</h3><p>Ligue o primeiro interruptor e deixe-o ligado por alguns minutos.
+        Desligue o primeiro interruptor e ligue o segundo interruptor.
+        Vá até a sala das lâmpadas:
+        A lâmpada que estiver acesa corresponde ao segundo interruptor.
+        A lâmpada que estiver desligada, mas quente, corresponde ao primeiro interruptor (pois estava ligada anteriormente e foi desligada).
+        A lâmpada que estiver desligada e fria corresponde ao terceiro interruptor (pois nunca foi ligada).</p>
+    <button onclick="ligarDesligar(1)">Interruptor 1</button>
+    <button onclick="ligarDesligar(2)">Interruptor 2</button>
+    <button onclick="ligarDesligar(3)">Interruptor 3</button>
+
+    <p id="estadoInterruptores"></p>
+
+    <!-- Botão para simular a ida à sala -->
+    <h3>Visitar a sala das lâmpadas</h3>
+    <button onclick="visitarSala()">Visitar Sala das Lâmpadas</button>
+    <p id="resultado"></p>
+</div>
+            <script src="Teste.js"></script>
+</body>
+</html>
